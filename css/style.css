@@ -4,11 +4,11 @@
 }
 :root {
     --font-family: 'playfair Display', serif;
-    --button-cancel: red;
+    --button-cancel: rgb(253, 14, 14);
     --color-principal: rgba(96, 79, 44, 0.86);
     --color-second: rgba(255, 255, 255, 0.99);
-    --color-third: black;
-    --color-fourth: orangered;
+    --color-third: rgb(0, 0, 0);
+    --color-fourth: rgba(255, 68, 0, 0.897);
     
 
  }
@@ -161,7 +161,8 @@ h2 { text-transform: uppercase; color: #3b3636;margin-top: 5px; font-family:var(
     background-color: bisque;}  
                    
     .card-body {width: 100%; }
-    .carousel.item img  { height: 50%;}
+   
+    
           
     .buy {  background-color: rgba(0, 128, 0, 0.75);}
     button .buy:hover { color: rgb(16, 152, 16);}
