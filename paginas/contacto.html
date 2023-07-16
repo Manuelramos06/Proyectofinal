@@ -7,7 +7,7 @@
     <title>NOVA MODA - Shop store</title>
     <link rel="shortcut icon" href="../imagine/n.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -50,16 +50,18 @@
    </header>
 
     <main>
-    <form class="form-contact" ,method= "post" name=" formulario" >
-      <h2>Contacto</h2>
-      <input type="text" name="name" placeholder="Name"> 
-      <input type="text" name="last name " placeholder="last name">
-      <input type="email" name="email" placeholder="email">
-      <input type="telefono" name="telephone" placeholder="telephone"> 
-      <textarea name="Comentarios" id="comentarios" cols="30" rows="7" placeholder="Escribe tus comentarios"></textarea>
-      </textarea>
-      <input type="submit" name="enviar" id="enviar">
-    </form>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Name address</label>
+      <input type="Name" class="form-control" id="exampleFormControlInput1" placeholder="lucia Beato">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
 
 </main>
 

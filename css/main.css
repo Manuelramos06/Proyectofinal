@@ -1,3 +1,231 @@
+@charset "UTF-8";
+@media (width > 551px) {
+  .bar1 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.229), rgba(204, 190, 190, 0.097)), url(../imagine/Sitio\ Web\ Blogger\ Fotográfico\ Bio-Enlace\ Verde\ y\ Crema.png);
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
+  }
+  .container-goal h2 {
+    text-align: center;
+    font-weight: 800;
+    background-color: bisque;
+  }
+  .card.body {
+    width: 100%;
+  }
+  .buy {
+    background-color: rgba(0, 128, 0, 0.75);
+  }
+  .buy:hover {
+    color: rgb(16, 152, 16);
+  }
+  .save {
+    margin-left: 10px;
+    background-color: rgb(128, 128, 128);
+  }
+  .save:hover {
+    color: rgb(0, 0, 0);
+  }
+}
+@media (width < 550px) {
+  .container-goal img {
+    width: 100%;
+    margin-bottom: 10px;
+    object-fit: cover;
+  }
+  .container-goal h2 {
+    text-align: center;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+  }
+  .bar {
+    display: none;
+  }
+  .navbar-brand {
+    border: solid rgb(0, 0, 0);
+  }
+  .navbar-brand h1 {
+    font-size: 3em;
+  }
+  .prod {
+    width: 100%;
+  }
+  .prod figure {
+    width: 100%;
+  }
+  .filters {
+    display: none;
+  }
+}
+.navbar-brand {
+  display: inline-flex;
+  font-weight: 500;
+  border: solid black;
+}
+.navbar-brand span {
+  font-size: 6em;
+}
+.navbar-brand h1 {
+  font-size: 6em;
+}
 
+.nav-link {
+  font-weight: 500;
+}
+
+.store {
+  background-color: rgb(183, 128, 60);
+  display: flex;
+  flex-direction: row;
+}
+
+.filters {
+  margin-top: 10px;
+  padding: 0 20px 30px 30px;
+  border: none;
+}
+.filters a {
+  color: rgb(183, 128, 60);
+  font-size: 0.9em;
+  text-decoration: none;
+  margin-bottom: 4px;
+  text-transform: lowercase;
+}
+.filters a:hover {
+  color: rgb(0, 0, 0);
+}
+.filters span {
+  display: block;
+  color: rgb(0, 0, 0);
+  margin: 10px 0;
+  letter-spacing: 1px;
+  font-size: 0.8em;
+  font-weight: 300;
+}
+.filters label {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+.filters li {
+  padding-left: 10px;
+  list-style: none;
+}
+
+.prod {
+  padding: 20px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: none;
+}
+.prod figure {
+  width: 30%;
+  margin-bottom: 10px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 4px 4px 6px 6px orangered;
+}
+.prod figure img {
+  width: 90%;
+  height: 80%;
+  align-items: center;
+}
+.prod figure figcaption {
+  color: rgb(225, 135, 18);
+  font-size: 1.4em;
+}
+.prod figure p {
+  text-align: center;
+}
+.prod figure button {
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(225, 135, 18);
+  padding: 6px;
+  margin-top: 10px 0;
+}
+
+footer {
+  margin: 0;
+  width: 100%;
+  padding: 50px 0px;
+  background-color: rgb(183, 128, 60);
+}
+
+.container-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+  border: none;
+  border-bottom: 3px solid rgba(31, 25, 25, 0.2352941176);
+  border-top: 3px solid rgba(8, 8, 8, 0.3411764706);
+  box-shadow: 6px 6px 20px rgba(236, 155, 155, 0.968);
+  background-color: rgb(255, 255, 255);
+}
+
+.logo-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  justify-content: center;
+}
+.logo-footer h2 {
+  margin-bottom: 30px;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+}
+.logo-footer a {
+  margin-top: 10px;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  text-decoration: none;
+}
+.logo-footer a:hover {
+  color: rgb(225, 135, 18);
+  width: 100%;
+  height: 100%;
+}
+
+.galery {
+  width: 100%;
+}
+
+.galery-one {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.galery-one img {
+  width: 100%;
+}
+
+.min-galery {
+  display: flex;
+  width: 70%;
+  height: 350px;
+}
+.min-galery img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+  justify-content: center;
+}
+.min-galery img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
 
 /*# sourceMappingURL=main.css.map */

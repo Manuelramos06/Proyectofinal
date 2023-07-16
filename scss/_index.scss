@@ -1,0 +1,35 @@
+.galery {
+    width: 100%;
+}
+.galery-one {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+    img {
+        width: 100%;
+    }
+}
+
+.min-galery {
+     
+      display: flex;
+      width: 70%;
+      height: 350px;
+   
+      img {
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .8;
+        transition: .5s ease;
+       justify-content: center;
+           &:hover{
+            cursor: crosshair;
+            width: 300px;
+            opacity: 1;
+            filter: contrast(120%);
+          }
+        
+    }
+ }
