@@ -40,18 +40,5 @@ border: solid black;
 
 
 
-.index-firt { padding: 20px 30px;
-    
-}
 
-.index-firt section h2 { text-align: center; text-transform: uppercase; font-family: var(--font-family); font-size: 30px; }
-
-
-.index img { padding: 5px; width: 250px; } 
-
-.index-galery { border: #000; display: flex; justify-content: center; }  
-
-.intro { text-align: center; font-size: 20px; font-family:var(--font-family) }
- 
-h2 { text-transform: uppercase; color: #3b3636;margin-top: 5px; font-family:var(--font-family)}
  

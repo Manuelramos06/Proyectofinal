@@ -58,6 +58,30 @@
     display: none;
   }
 }
+@keyframes entrar-izq {
+  from {
+    transform: translateX(-200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes entrar-up {
+  from {
+    transform: translateY(-200%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes entrar-der {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 .navbar-brand {
   display: inline-flex;
   font-weight: 500;
@@ -74,81 +98,138 @@
   font-weight: 500;
 }
 
-.store {
-  background-color: rgb(183, 128, 60);
+.contact-one {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  animation: entrar-izq 0.8s ease;
+}
+
+.contact {
+  width: 70%;
+}
+
+.botonera-solid {
+  background-color: black;
+  cursor: pointer;
+  border: none;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  border-radius: 12px;
+  color: white;
+  width: 100%;
 }
 
 .filters {
   margin-top: 10px;
   padding: 0 20px 30px 30px;
-  border: none;
-}
-.filters a {
-  color: rgb(183, 128, 60);
-  font-size: 0.9em;
-  text-decoration: none;
-  margin-bottom: 4px;
-  text-transform: lowercase;
-}
-.filters a:hover {
-  color: rgb(0, 0, 0);
-}
-.filters span {
-  display: block;
-  color: rgb(0, 0, 0);
-  margin: 10px 0;
-  letter-spacing: 1px;
-  font-size: 0.8em;
-  font-weight: 300;
+  border-top: solid black;
 }
 .filters label {
   font-size: 0.8em;
   font-weight: 300;
 }
-.filters li {
-  padding-left: 10px;
+
+.shop-one ul {
+  text-align: center;
+  background-color: rgb(128, 128, 128);
+  padding: 0;
+  font-family: "playfair Display", serif;
+  font-weight: 600;
+  width: 100%;
+}
+.shop-one ul li {
+  padding-left: 0 10px;
   list-style: none;
 }
-
-.prod {
-  padding: 20px 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  border: none;
+.shop-one span b {
+  font-weight: 500;
+  font-family: "playfair Display", serif;
 }
-.prod figure {
-  width: 30%;
+
+.categories-one {
+  margin-top: 10px;
+  padding: 0 20px 30px 30px;
+  border-top: solid rgb(128, 128, 128);
+  padding-top: 10px;
+}
+
+.accessory span b {
+  font-weight: 700;
+  font-family: "playfair Display", serif;
+}
+.accessory ul {
+  list-style: none;
+  text-align: left;
+}
+.accessory ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: "playfair Display", serif;
+}
+.accessory ul li a:hover {
+  color: rgb(225, 135, 18);
+}
+
+.prod-model {
+  margin-top: 10px;
+  width: 80%;
+  height: auto;
+  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  margin: 10px auto;
+  padding-bottom: 10px;
+}
+.prod-model figure {
+  width: 100%;
+  height: 100%;
   margin-bottom: 10px;
-  padding: 0 20px;
+  margin-top: 10px;
+  padding: 0 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border: none;
   border-radius: 3px;
-  box-shadow: 4px 4px 6px 6px orangered;
 }
-.prod figure img {
-  width: 90%;
+.prod-model figure img {
+  width: 100%;
   height: 80%;
   align-items: center;
+  object-fit: cover;
 }
-.prod figure figcaption {
-  color: rgb(225, 135, 18);
+.prod-model figure figcaption {
+  font-family: "playfair Display", serif;
+  color: rgb(0, 0, 0);
   font-size: 1.4em;
+  font-weight: 700;
 }
-.prod figure p {
+.prod-model figure p {
   text-align: center;
+  align-items: center;
+  text-decoration-color: rgb(0, 0, 0);
+  font-weight: 350;
+  font-family: "playfair Display", serif;
 }
-.prod figure button {
-  border: none;
+.prod-model figure button {
+  border: color(rgb(0, 0, 0));
+  border-width: 1px;
   border-radius: 4px;
-  background-color: rgb(225, 135, 18);
-  padding: 6px;
-  margin-top: 10px 0;
+  text-decoration: "playfair Display", serif;
+  background-color: rgb(255, 255, 255);
+  padding: 3px;
+  margin-top: 5px 0;
+  width: 70%;
+  transition: 3s;
+}
+.prod-model figure button:hover {
+  background-color: rgb(183, 128, 60);
+  transition: 1.5s;
 }
 
 footer {
@@ -195,6 +276,16 @@ footer {
   height: 100%;
 }
 
+.index-tittle {
+  background-color: rgb(183, 128, 60);
+  text-align: center;
+  font-family: "playfair Display", serif;
+  font-size: 700;
+  text-transform: uppercase;
+  position: relative;
+  animation: entrar-der 0.9s ease;
+}
+
 .galery {
   width: 100%;
 }
@@ -203,6 +294,8 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
+  position: relative;
+  animation: entrar-izq 0.9s ease;
 }
 .galery-one img {
   width: 100%;
@@ -233,67 +326,28 @@ footer {
 .filters-one {
   margin-top: 10px;
   padding: 0 20px 30px 30px;
-  border: solid black;
-}
-.filters-one span {
-  display: block;
-  color: rgb(0, 0, 0);
-  margin: 10px 0;
-  letter-spacing: 1px;
-  font-size: 0.8em;
-  font-weight: 300;
-  border: solid black;
-}
-.filters-one span a {
-  color: rgb(183, 128, 60);
-  font-size: 0.9em;
-  text-decoration: none;
-  margin-bottom: 4px;
-  text-transform: lowercase;
-}
-.filters-one span a:hover {
-  color: rgb(0, 0, 0);
+  border-top: solid black;
 }
 .filters-one label {
   font-size: 0.8em;
   font-weight: 300;
 }
-.filters-one li {
-  padding-left: 10px;
-  list-style: none;
-}
 
-.categories {
-  margin-top: 10px;
-  padding: 0 20px 30px 30px;
-  border: solid black;
+.shop ul {
+  text-align: center;
+  background-color: rgb(128, 128, 128);
+  padding: 0;
+  font-family: "playfair Display", serif;
+  font-weight: 600;
+  width: 100%;
 }
-.categories span {
-  display: block;
-  color: rgb(0, 0, 0);
-  margin: 10px 0;
-  letter-spacing: 1px;
-  font-size: 0.8em;
-  font-weight: 300;
-  border: solid black;
-}
-.categories label {
-  font-size: 0.8em;
-  font-weight: 300;
-}
-.categories li {
-  padding-left: 10px;
+.shop ul li {
+  padding-left: 0 10px;
   list-style: none;
 }
-.categories li a {
-  color: rgb(183, 128, 60);
-  font-size: 0.9em;
-  text-decoration: none;
-  margin-bottom: 4px;
-  text-transform: lowercase;
-}
-.categories li a:hover {
-  color: rgb(0, 0, 0);
+.shop span b {
+  font-weight: 500;
+  font-family: "playfair Display", serif;
 }
 
 .line {
@@ -309,6 +363,7 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: repeat(2, 1fr);
   margin: 10px auto;
+  padding-bottom: 10px;
 }
 .prod-init figure {
   width: 100%;

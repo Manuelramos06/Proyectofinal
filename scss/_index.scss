@@ -1,3 +1,14 @@
+.index-tittle {
+    background-color:$color-second;
+  text-align: center;
+ font-family: $main-font;
+ font-size:$text-second; 
+ text-transform: uppercase; 
+ position: relative;
+ animation: entrar-der .9s ease;
+}
+
+
 .galery {
     width: 100%;
 }
@@ -5,6 +16,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    position: relative;
+ animation: entrar-izq .9s ease;
    
     img {
         width: 100%;
@@ -38,77 +51,40 @@
  
     margin-top: 10px; 
     padding: 0 20px 30px 30px;
-    border: solid black;
+    border-top: solid black;
    
-    span {display: block;
-        color:$main-color;
-        margin: 10px 0;
-        letter-spacing: 1px;
-        font-size: .8em;
-        font-weight: 300;
-        border: solid black;
-      
-         a {
-            color:$color-second;
-        font-size: .9em;
-        text-decoration:none;
-        margin-bottom: 4px;
-        text-transform: lowercase;
-       &:hover{
-        color:$main-color;
-       } }
-
-    }
+    
     label{
         font-size:$text-sm;
         font-weight:300;
 
     }
-    
-    li {
-        padding-left: 10px;
-        list-style:none;
-       
-      }
-}
-
-.categories {
-    margin-top: 10px; 
-    padding: 0 20px 30px 30px;
-    border: solid black;
-   
-    span {display: block;
-        color:$main-color;
-        margin: 10px 0;
-        letter-spacing: 1px;
-        font-size: .8em;
-        font-weight: 300;
-        border: solid black;
-      
         
-
-    }
-    label{
-        font-size:$text-sm;
-        font-weight:300;
-
-    }
-    
-    li {
-        padding-left: 10px;
-        list-style:none;
-        a {
-            color:$color-second;
-        font-size: .9em;
-        text-decoration:none;
-        margin-bottom: 4px;
-        text-transform: lowercase;
-       &:hover{
-        color:$main-color;
-       } }
-       
-      }
+      
 }
+.shop{ 
+    ul { 
+        text-align: center;
+        background-color:$color-third;
+        padding: 0;
+        font-family:$main-font;
+        font-weight: $text-first;
+        width: 100%;
+        li {
+           
+            padding-left: 0 10px;
+            list-style:none;  
+            }
+          }
+          span {
+            b{
+                font-weight:$text-regular;
+                font-family:$main-font;
+            }
+          }
+}
+
+
 .line { border-top: solid $color-third;}
  .prod-init {
     
@@ -121,6 +97,7 @@
     grid-template-rows:repeat(2,1fr);
    
     margin: 10px auto;
+    padding-bottom: 10px;
     
     figure { width: 100%;
         height: 100%;

@@ -1,0 +1,26 @@
+@keyframes entrar-izq{ 
+    from{
+        transform:translateX(-200%)
+    }
+    to{ 
+        transform: translateX(0);
+    }
+
+}
+@keyframes entrar-up {
+    from{
+        transform:translateY(-200%)
+    }
+    to{
+        transform:translateY(0)
+    }
+}
+@keyframes entrar-der {
+    from{
+        transform:translateX(200%) ;
+
+    }
+    to{
+        transform: translateX(0);
+    }
+}
