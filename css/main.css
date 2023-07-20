@@ -6,20 +6,6 @@
     object-fit: cover;
     width: 100%;
   }
-  .container-goal h2 {
-    text-align: center;
-    font-weight: 800;
-    background-color: bisque;
-  }
-  .card.body {
-    width: 100%;
-  }
-  .buy {
-    background-color: rgba(0, 128, 0, 0.75);
-  }
-  .buy:hover {
-    color: rgb(16, 152, 16);
-  }
   .save {
     margin-left: 10px;
     background-color: rgb(128, 128, 128);
@@ -29,15 +15,9 @@
   }
 }
 @media (width < 550px) {
-  .container-goal img {
-    width: 100%;
-    margin-bottom: 10px;
-    object-fit: cover;
-  }
-  .container-goal h2 {
-    text-align: center;
-    font-weight: 600;
-    background-color: rgb(255, 255, 255);
+  * {
+    margin: 0;
+    padding: 0;
   }
   .bar {
     display: none;
@@ -56,6 +36,33 @@
   }
   .filters {
     display: none;
+  }
+}
+@media (width < 780px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  .card-one {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .card-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .card-container img {
+    width: 90%;
+  }
+  .header-card {
+    padding: 20px 20px 5px 20px;
+    border: none;
+    display: flex;
+    justify-content: center;
+  }
+  .description {
+    padding: 5px 20px 20px 20px;
   }
 }
 @keyframes entrar-izq {
@@ -86,6 +93,7 @@
   display: inline-flex;
   font-weight: 500;
   border: solid black;
+  font-family: "playfair Display", serif;
 }
 .navbar-brand span {
   font-size: 6em;
@@ -95,7 +103,8 @@
 }
 
 .nav-link {
-  font-weight: 500;
+  font-weight: 700;
+  font-family: "playfair Display", serif;
 }
 
 .contact-one {
@@ -109,7 +118,7 @@
   width: 70%;
 }
 
-.botonera-solid {
+.contact-two {
   background-color: black;
   cursor: pointer;
   border: none;
@@ -251,6 +260,7 @@ footer {
   border-top: 3px solid rgba(8, 8, 8, 0.3411764706);
   box-shadow: 6px 6px 20px rgba(236, 155, 155, 0.968);
   background-color: rgb(255, 255, 255);
+  font-family: "playfair Display", serif;
 }
 
 .logo-footer {
@@ -411,6 +421,143 @@ footer {
 .prod-init figure button:hover {
   background-color: rgb(183, 128, 60);
   transition: 1.5s;
+}
+
+.container-goal {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.card-one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.card-container {
+  display: flex;
+  width: 600px;
+  height: auto;
+  border-radius: 2px;
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: entrar-izq 0.9s ease;
+}
+
+.header-card {
+  justify-content: center;
+}
+.header-card a {
+  position: relative;
+  display: block;
+}
+.header-card a img:hover {
+  box-shadow: 0 0 0 12px rgba(0, 0, 0, 0.1);
+}
+.header-card img {
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.6);
+  margin: 20px 30px;
+  transition: 0.2s;
+}
+
+.header, .description {
+  padding: 20px;
+  text-align: center;
+}
+
+.description {
+  position: relative;
+  animation: entrar-der 0.9s ease;
+  font-family: "playfair Display", serif;
+  font-weight: 600;
+}
+.description p {
+  margin: 20px 30px;
+}
+.description .social {
+  margin-top: 25px;
+}
+.description .social a {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.tende {
+  background-color: rgb(183, 128, 60);
+  text-align: center;
+}
+
+.blog-one {
+  margin-top: 10px;
+  width: 80%;
+  height: auto;
+  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.2);
+  margin: 10px auto;
+  padding-bottom: 10px;
+  background-color: rgb(255, 255, 255);
+}
+.blog-one figure {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 3px;
+}
+.blog-one figure img {
+  width: 100%;
+  height: 80%;
+  align-items: center;
+  object-fit: cover;
+}
+.blog-one figure figcaption {
+  font-family: "playfair Display", serif;
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+  font-weight: 500;
+}
+.blog-one figure p {
+  text-align: center;
+  align-items: center;
+  text-decoration-color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-family: "playfair Display", serif;
+}
+.blog-one figure button {
+  border: color(rgb(0, 0, 0));
+  border-width: 1px;
+  border-radius: 4px;
+  text-decoration: "playfair Display", serif;
+  background-color: rgb(255, 255, 255);
+  padding: 3px;
+  margin-top: 5px 0;
+  width: 70%;
+  transition: 3s;
+}
+.blog-one figure button:hover {
+  background-color: rgb(183, 128, 60);
+  transition: 1.5s;
+}
+
+.Blog {
+  background-image: url(../imagine/Sitio\ Web\ Blogger\ Fotográfico\ Bio-Enlace\ Verde\ y\ Crema.png);
+  height: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
