@@ -29,7 +29,7 @@ uses a number of open source projects and framework to work properly:
  - HTML
 
 
-link del repo : https://github.com/Manuelramos06/terceraPRE.git
+link del repo : https://github.com/Manuelramos06/Proyectofinal.git
 link deployment: https://manuelramos06.github.io/terceraPRE/
 
 
